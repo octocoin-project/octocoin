@@ -66,11 +66,11 @@
         <translation>アドレス受信中</translation>
     </message>
     <message>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>これらは支払いを送信するためのあなたの Litecoin アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
+        <source>These are your Octocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>これらは支払いを送信するためのあなたの Octocoin アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
     </message>
     <message>
-        <source>These are your Litecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Octocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>これらは支払いを受け取るためのビットコインアドレスです。トランザクションごとに新しい受け取り用アドレスを作成することが推奨されます。</translation>
     </message>
     <message>
@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Litecoin はすべて失われます&lt;/b&gt;!</translation>
+        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Octocoin はすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>ウォレットの新しいパスフレーズを入力してください。&lt;br/&gt;&lt;b&gt;10文字以上のランダムな文字&lt;/b&gt;で構成されたものか、&lt;b&gt;8単語以上の単語&lt;/b&gt;で構成されたパスフレーズを使用してください。</translation>
     </message>
     <message>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Litecoin は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
+        <source>Octocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <translation>Octocoin は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,7 +295,7 @@
         <translation>URI を開く (&amp;U)...</translation>
     </message>
     <message>
-        <source>Litecoin Core client</source>
+        <source>Octocoin Core client</source>
         <translation>Litecoinコア クライアント</translation>
     </message>
     <message>
@@ -307,12 +307,12 @@
         <translation>ディスク上のブロックのインデックスを再作成中...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Litecoin アドレスにコインを送る</translation>
+        <source>Send coins to a Octocoin address</source>
+        <translation>Octocoin アドレスにコインを送る</translation>
     </message>
     <message>
-        <source>Modify configuration options for Litecoin</source>
-        <translation>Litecoin の設定を変更する</translation>
+        <source>Modify configuration options for Octocoin</source>
+        <translation>Octocoin の設定を変更する</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>メッセージの検証... (&amp;V)</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Octocoin</source>
+        <translation>Octocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,7 +351,7 @@
         <translation>受信 (&amp;R)</translation>
     </message>
     <message>
-        <source>Show information about Litecoin Core</source>
+        <source>Show information about Octocoin Core</source>
         <translation>Litecoinコアに関する情報を表示</translation>
     </message>
     <message>
@@ -367,12 +367,12 @@
         <translation>あなたのウォレットの秘密鍵を暗号化します</translation>
     </message>
     <message>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
-        <translation>あなたが所有していることを証明するために、あなたの Litecoin アドレスでメッセージに署名してください</translation>
+        <source>Sign messages with your Octocoin addresses to prove you own them</source>
+        <translation>あなたが所有していることを証明するために、あなたの Octocoin アドレスでメッセージに署名してください</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
-        <translation>指定された Litecoin アドレスで署名されたことを確認するためにメッセージを検証します</translation>
+        <source>Verify messages to ensure they were signed with specified Octocoin addresses</source>
+        <translation>指定された Octocoin アドレスで署名されたことを確認するためにメッセージを検証します</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,15 +391,15 @@
         <translation>タブツールバー</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin のコア</translation>
+        <source>Octocoin Core</source>
+        <translation>Octocoin のコア</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <source>Request payments (generates QR codes and octocoin: URIs)</source>
         <translation>支払いを要求する (QRコードとlitecoin:ではじまるURIを生成する)</translation>
     </message>
     <message>
-        <source>&amp;About Litecoin Core</source>
+        <source>&amp;About Octocoin Core</source>
         <translation>ビットコインコアについて (&amp;A)</translation>
     </message>
     <message>
@@ -411,20 +411,20 @@
         <translation>支払いを受け取るアドレスとラベルのリストを表示する</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>litecoin: URIまたは支払いリクエストを開く</translation>
+        <source>Open a octocoin: URI or payment request</source>
+        <translation>octocoin: URIまたは支払いリクエストを開く</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>コマンドラインオプション (&amp;C)</translation>
     </message>
     <message>
-        <source>Show the Litecoin Core help message to get a list with possible Litecoin command-line options</source>
-        <translation>有効な Litecoin のコマンドライン オプションを見るために Litecoin Core のヘルプメッセージを表示します。</translation>
+        <source>Show the Octocoin Core help message to get a list with possible Octocoin command-line options</source>
+        <translation>有効な Octocoin のコマンドライン オプションを見るために Octocoin Core のヘルプメッセージを表示します。</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Litecoin network</source>
-        <translation><numerusform>%n の Litecoin ネットワークへのアクティブな接続</numerusform></translation>
+        <source>%n active connection(s) to Octocoin network</source>
+        <translation><numerusform>%n の Octocoin ネットワークへのアクティブな接続</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -787,8 +787,8 @@ Address: %4
         <translation>入力されたアドレス "%1" は既にアドレス帳にあります。</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Litecoin address.</source>
-        <translation>入力されたアドレス "%1" は無効な Litecoin アドレスです。</translation>
+        <source>The entered address "%1" is not a valid Octocoin address.</source>
+        <translation>入力されたアドレス "%1" は無効な Octocoin アドレスです。</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -825,8 +825,8 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin のコア</translation>
+        <source>Octocoin Core</source>
+        <translation>Octocoin のコア</translation>
     </message>
     <message>
         <source>version</source>
@@ -837,7 +837,7 @@ Address: %4
         <translation>(%1ビット)</translation>
     </message>
     <message>
-        <source>About Litecoin Core</source>
+        <source>About Octocoin Core</source>
         <translation>Litecoinコアについて</translation>
     </message>
     <message>
@@ -884,16 +884,16 @@ Address: %4
         <translation>ようこそ</translation>
     </message>
     <message>
-        <source>Welcome to Litecoin Core.</source>
+        <source>Welcome to Octocoin Core.</source>
         <translation>ようこそ！</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Litecoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Octocoin Core will store its data.</source>
         <translation>これはプログラム最初の起動です。Litecoin Coreがデータを保存する場所を選択して下さい。</translation>
     </message>
     <message>
-        <source>Litecoin Core will download and store a copy of the Litecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Litecoin Coreは、ビットコインのブロックチェーンのコピーを、ダウンロードして保存します。少なくとも%1ギガバイトのデータが、このディレクトリに保存されます。そしてそれは時間と共に増加します。またウォレットもこのディレクトリに保存されます。</translation>
+        <source>Octocoin Core will download and store a copy of the Octocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Octocoin Coreは、ビットコインのブロックチェーンのコピーを、ダウンロードして保存します。少なくとも%1ギガバイトのデータが、このディレクトリに保存されます。そしてそれは時間と共に増加します。またウォレットもこのディレクトリに保存されます。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -904,8 +904,8 @@ Address: %4
         <translation>任意のデータ ディレクトリを使用:</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin のコア</translation>
+        <source>Octocoin Core</source>
+        <translation>Octocoin のコア</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -958,12 +958,12 @@ Address: %4
         <translation>メイン (&amp;M)</translation>
     </message>
     <message>
-        <source>Automatically start Litecoin after logging in to the system.</source>
-        <translation>システムにログインした時に自動的に Litecoin を起動します。</translation>
+        <source>Automatically start Octocoin after logging in to the system.</source>
+        <translation>システムにログインした時に自動的に Octocoin を起動します。</translation>
     </message>
     <message>
-        <source>&amp;Start Litecoin on system login</source>
-        <translation>システムにログインした時に Litecoin を起動 (&amp;S)</translation>
+        <source>&amp;Start Octocoin on system login</source>
+        <translation>システムにログインした時に Octocoin を起動 (&amp;S)</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1038,15 +1038,15 @@ Address: %4
         <translation>未検証のおつりを使用する (&amp;S)</translation>
     </message>
     <message>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーター上の Litecoin クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
+        <source>Automatically open the Octocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動的にルーター上の Octocoin クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>UPnP を使ってポートを割り当てる (&amp;U)</translation>
     </message>
     <message>
-        <source>Connect to the Litecoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Octocoin network through a SOCKS5 proxy.</source>
         <translation>SOCKS5 プロキシ経由でLitecoinネットワークに接続する</translation>
     </message>
     <message>
@@ -1094,8 +1094,8 @@ Address: %4
         <translation>ユーザインターフェースの言語 (&amp;l) :</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
-        <translation>ここでユーザインターフェースの言語を設定できます。設定を反映するには Litecoin を再起動します。</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Octocoin.</source>
+        <translation>ここでユーザインターフェースの言語を設定できます。設定を反映するには Octocoin を再起動します。</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1153,8 +1153,8 @@ Address: %4
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Litecoin ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Octocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Octocoin ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1260,16 +1260,16 @@ Address: %4
         <translation>支払いのリクエストのエラーです</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Litecoin を起動できません: click-to-pay handler</translation>
+        <source>Cannot start octocoin: click-to-pay handler</source>
+        <translation>Octocoin を起動できません: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>支払い要求の取得先URLが無効です: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
-        <translation>URI を解析できません! これは無効な Litecoin アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Octocoin address or malformed URI parameters.</source>
+        <translation>URI を解析できません! これは無効な Octocoin アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1338,7 +1338,7 @@ Address: %4
         <translation>総額</translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. %1)</source>
+        <source>Enter a Octocoin address (e.g. %1)</source>
         <translation>Litecoinアドレスを入力してください (例 %1)</translation>
     </message>
     <message>
@@ -1564,16 +1564,16 @@ Address: %4
         <translation>デバッグ用ログファイル</translation>
     </message>
     <message>
-        <source>Open the Litecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>現在のデータ ディレクトリから Litecoin のデバッグ用ログファイルを開きます。ログファイルが大規模な場合には数秒かかることがあります。</translation>
+        <source>Open the Octocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>現在のデータ ディレクトリから Octocoin のデバッグ用ログファイルを開きます。ログファイルが大規模な場合には数秒かかることがあります。</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>コンソールをクリア</translation>
     </message>
     <message>
-        <source>Welcome to the Litecoin RPC console.</source>
-        <translation>Litecoin RPC コンソールへようこそ。</translation>
+        <source>Welcome to the Octocoin RPC console.</source>
+        <translation>Octocoin RPC コンソールへようこそ。</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1647,7 +1647,7 @@ Address: %4
         <translation>既存の受取用アドレスを再利用する (非推奨) (&amp;E)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Litecoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Octocoin network.</source>
         <translation>支払リクエストが開始された時に表示される、支払リクエストに添える任意のメッセージです。注意：メッセージはLitecoinネットワークを通じて、支払と共に送られるわけではありません。</translation>
     </message>
     <message>
@@ -1884,7 +1884,7 @@ Address: %4
         <translation>最小手数料</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for octocoin transactions than the network can process.</source>
         <translation>ブロックの容量に比べてトランザクション流量が少ないうちは最小手数料のみの支払で十分です。しかしながらネットワークが処理しきれないほどlitecoinトランザクションの需要がひとたび生まれてしまった場合には、永遠に検証がされないトランザクションになってしまう可能性があることに注意してください。</translation>
     </message>
     <message>
@@ -2040,7 +2040,7 @@ Address: %4
         <translation>%1 ブロック以内に検証が終わると予想されます。</translation>
     </message>
     <message>
-        <source>Warning: Invalid Litecoin address</source>
+        <source>Warning: Invalid Octocoin address</source>
         <translation>警告：無効なLitecoinアドレスです</translation>
     </message>
     <message>
@@ -2091,7 +2091,7 @@ Address: %4
         <translation>これは通常の支払です。</translation>
     </message>
     <message>
-        <source>The Litecoin address to send the payment to</source>
+        <source>The Octocoin address to send the payment to</source>
         <translation>支払の送金先Litecoinアドレス</translation>
     </message>
     <message>
@@ -2123,8 +2123,8 @@ Address: %4
         <translation>このアドレスに対するラベルを入力することで、使用済みアドレスの一覧に追加することができます</translation>
     </message>
     <message>
-        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Litecoin network.</source>
-        <translation>litecoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはLitecoinネットワークを通して送信されるわけではありません。</translation>
+        <source>A message that was attached to the octocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Octocoin network.</source>
+        <translation>octocoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはLitecoinネットワークを通して送信されるわけではありません。</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2142,8 +2142,8 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Litecoin Core is shutting down...</source>
-        <translation>Litecoin Coreをシャットダウンしています。</translation>
+        <source>Octocoin Core is shutting down...</source>
+        <translation>Octocoin Coreをシャットダウンしています。</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2165,7 +2165,7 @@ Address: %4
         <translation>あなた自身を立証するためにあなたのアドレスでメッセージに署名することができます。フィッシング攻撃によってあなたを騙して署名を譲渡させようとするかもしれないので、不明確なものは絶対に署名しないように注意してください。あなたが同意する完全に詳細な声明にだけ署名してください。</translation>
     </message>
     <message>
-        <source>The Litecoin address to sign the message with</source>
+        <source>The Octocoin address to sign the message with</source>
         <translation>メッセージを署名するLitecoinアドレス</translation>
     </message>
     <message>
@@ -2197,8 +2197,8 @@ Address: %4
         <translation>現在の署名をシステムのクリップボードにコピーする</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Litecoin address</source>
-        <translation>この Litecoin アドレスを所有していることを証明するためにメッセージに署名</translation>
+        <source>Sign the message to prove you own this Octocoin address</source>
+        <translation>この Octocoin アドレスを所有していることを証明するためにメッセージに署名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2221,12 +2221,12 @@ Address: %4
         <translation>メッセージを検証するために、署名するアドレスとメッセージ(改行、スペース、タブなどを正確にコピーしてください)、そして署名を入力します。中間者攻撃によってだまされることを避けるために、署名されたメッセージそのものよりも、署名を読み取られないように注意してください。</translation>
     </message>
     <message>
-        <source>The Litecoin address the message was signed with</source>
+        <source>The Octocoin address the message was signed with</source>
         <translation>メッセージの署名に使われたLitecoinアドレス</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
-        <translation>指定された Litecoin アドレスで署名されたことを保証するメッセージを検証</translation>
+        <source>Verify the message to ensure it was signed with the specified Octocoin address</source>
+        <translation>指定された Octocoin アドレスで署名されたことを保証するメッセージを検証</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2292,11 +2292,11 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Litecoin のコア</translation>
+        <source>Octocoin Core</source>
+        <translation>Octocoin のコア</translation>
     </message>
     <message>
-        <source>The Bitcoin Core developers</source>
+        <source>The Octocoin Core developers</source>
         <translation>ビットコインコアの開発者</translation>
     </message>
     <message>
@@ -2846,8 +2846,8 @@ Address: %4
         <translation>これはリリース前のテストビルドです - 各自の責任で利用すること - 採掘や商取引に使用しないでください</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Litecoin Core is probably already running.</source>
-        <translation>このコンピュータの %s にバインドすることができません。おそらく Litecoin Core は既に実行されています。</translation>
+        <source>Unable to bind to %s on this computer. Octocoin Core is probably already running.</source>
+        <translation>このコンピュータの %s にバインドすることができません。おそらく Octocoin Core は既に実行されています。</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3035,8 +3035,8 @@ Address: %4
         <translation>指定されたアドレスに対して JSON-RPC 接続をリッスンしするようバインドします。IPv6の場合には [host]:port 表記を使用してください。このオプションは複数回指定することが可能です (初期値: すべてのインターフェースに対してバインドする)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Litecoin Core is probably already running.</source>
-        <translation>データ ディレクトリ %s のロックを取得することができません。おそらく Litecoin Core は実行中です。</translation>
+        <source>Cannot obtain a lock on data directory %s. Octocoin Core is probably already running.</source>
+        <translation>データ ディレクトリ %s のロックを取得することができません。おそらく Octocoin Core は実行中です。</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -3059,12 +3059,12 @@ Address: %4
         <translation>関連のアラートをもらってもすごく長いのフォークを見てもコマンドを実行 (コマンドの中にあるの%sはメッセージから置き換えさせる)</translation>
     </message>
     <message>
-        <source>Fees (in LTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>中継の際、この値未満の手数料 (LTC/Kb単位) はゼロであるとみなす (デフォルト: %s)</translation>
+        <source>Fees (in 888/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>中継の際、この値未満の手数料 (888/Kb単位) はゼロであるとみなす (デフォルト: %s)</translation>
     </message>
     <message>
-        <source>Fees (in LTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>トランザクション作成の際、この値未満の手数料 (LTC/Kb単位) はゼロであるとみなす (デフォルト: %s)</translation>
+        <source>Fees (in 888/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>トランザクション作成の際、この値未満の手数料 (888/Kb単位) はゼロであるとみなす (デフォルト: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3103,7 +3103,7 @@ Address: %4
         <translation>この製品はOpenSSLプロジェクトにより開発されたソフトウェアをOpenSSLツールキットとして利用しています &lt;https://www.openssl.org/&gt;。また、Eric Young氏により開発された暗号ソフトウェア、Thomas Bernard氏により書かれたUPnPソフトウェアを用いています。</translation>
     </message>
     <message>
-        <source>To use litecoind, or the -server option to litecoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use octocoind, or the -server option to octocoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=litecoinrpc
@@ -3112,7 +3112,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Litecoin Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Octocoin Alert" admin@foo.com
 </source>
         <translation>litecoindを用いる場合や、-server オプションをlitecoin-qtに指定する場合には、設定ファイルにrpcpasswordを設定しなければなりません:
 %s
@@ -3131,7 +3131,7 @@ rpcpassword=%s
         <translation>警告: -maxtxfee が非常に高く設定されています！ひとつのトランザクションでこの量の手数料が支払われてしまうことがあります。</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Litecoin Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Octocoin Core will not work properly.</source>
         <translation>警告： あなたのPCの日付と時刻が正しいことを確認して下さい！ もしあなたの時計が正しくなければLitecoin Coreが正確に動作しません。</translation>
     </message>
     <message>
@@ -3151,16 +3151,16 @@ rpcpassword=%s
         <translation>SOCKS5 プロキシ経由で接続する</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i Bitcoin Core 開発者</translation>
+        <source>Copyright (C) 2009-%i The Octocoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i Octocoin Core 開発者</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>-rpcbind の値 %s をネットワークアドレスとして解釈できませんでした</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Litecoin Core</source>
-        <translation>wallet.dat の読み込みに失敗しました: ウォレットの読み込みにはより新しいバージョンの Litecoin Core が必要です</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Octocoin Core</source>
+        <translation>wallet.dat の読み込みに失敗しました: ウォレットの読み込みにはより新しいバージョンの Octocoin Core が必要です</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3171,15 +3171,15 @@ rpcpassword=%s
         <translation>エラー: サポートされていない引数 -tor が見つかりました。-onion を使用してください。</translation>
     </message>
     <message>
-        <source>Fee (in LTC/kB) to add to transactions you send (default: %s)</source>
-        <translation>送信するトランザクションに付加する手数料 (LTC/kB単位) (初期値: %s)</translation>
+        <source>Fee (in 888/kB) to add to transactions you send (default: %s)</source>
+        <translation>送信するトランザクションに付加する手数料 (888/kB単位) (初期値: %s)</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>情報</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Litecoin Core is shutting down.</source>
+        <source>Initialization sanity check failed. Octocoin Core is shutting down.</source>
         <translation>初期化時の健全性チェックに失敗しました。Litecoin Coreを終了します。</translation>
     </message>
     <message>
@@ -3215,7 +3215,7 @@ rpcpassword=%s
         <translation>ノード中継オプション:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Litecoin Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Octocoin Wiki for SSL setup instructions)</source>
         <translation>RPC SSL オプション: (SSLのセットアップ手順はビットコインWikiを参照してください)</translation>
     </message>
     <message>
@@ -3287,8 +3287,8 @@ rpcpassword=%s
         <translation>JSON-RPC 接続のユーザー名</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Litecoin Core to complete</source>
-        <translation>ウォレットが書き直される必要がありました: 完了するために Litecoin Core を再起動します</translation>
+        <source>Wallet needed to be rewritten: restart Octocoin Core to complete</source>
+        <translation>ウォレットが書き直される必要がありました: 完了するために Octocoin Core を再起動します</translation>
     </message>
     <message>
         <source>Warning</source>

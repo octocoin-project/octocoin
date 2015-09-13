@@ -1,11 +1,11 @@
-# bash programmable completion for bitcoind(1) and bitcoin-cli(1)
+# bash programmable completion for octocoind(1) and octocoin-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have bitcoind && {
+have octocoind && {
 
-# call $bitcoind for RPC
+# call $octocoind for RPC
 _bitcoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
@@ -16,10 +16,10 @@ _bitcoin_rpc() {
                 ;;
         esac
     done
-    $bitcoind "${rpcargs[@]}" "$@"
+    $octocoind "${rpcargs[@]}" "$@"
 }
 
-# Add bitcoin accounts to COMPREPLY
+# Add octocoin accounts to COMPREPLY
 _bitcoin_accounts() {
     local accounts
     accounts=$(_bitcoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
@@ -28,11 +28,11 @@ _bitcoin_accounts() {
 
 _bitcoind() {
     local cur prev words=() cword
-    local bitcoind
+    local octocoind
 
-    # save and use original argument to invoke bitcoind
-    # bitcoind might not be in $PATH
-    bitcoind="$1"
+    # save and use original argument to invoke octocoind
+    # octocoind might not be in $PATH
+    octocoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -114,7 +114,7 @@ _bitcoind() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($bitcoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($octocoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
@@ -133,7 +133,7 @@ _bitcoind() {
     esac
 }
 
-complete -F _bitcoind bitcoind bitcoin-cli
+complete -F _bitcoind octocoind octocoin-cli
 }
 
 # Local variables:

@@ -1,5 +1,5 @@
-Building Bitcoin
+Building Octocoin
 
-See doc/build-*.md for instructions on building bitcoind,
+See doc/build-*.md for instructions on building octocoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Bitcoin.
+implementation of Octocoin.

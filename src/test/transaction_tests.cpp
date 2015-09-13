@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2014 The Bitcoin Core developers
+// Copyright (c) 2011-2014 The Octocoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -338,7 +338,7 @@ BOOST_AUTO_TEST_CASE(test_IsStandard)
     string reason;
     BOOST_CHECK(IsStandardTx(t, reason));
 
-    // Litecoin: IsDust() is disabled in favor of the per-dust output fee
+    // Octocoin: IsDust() is disabled in favor of the per-dust output fee
     //t.vout[0].nValue = 501; // dust
     //BOOST_CHECK(!IsStandardTx(t, reason));
 

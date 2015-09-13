@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2009-2014 The Octocoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -175,7 +175,7 @@ void RenameThread(const char* name);
  */
 template <typename Callable> void LoopForever(const char* name,  Callable func, int64_t msecs)
 {
-    std::string s = strprintf("litecoin-%s", name);
+    std::string s = strprintf("octocoin-%s", name);
     RenameThread(s.c_str());
     LogPrintf("%s thread start\n", name);
     try
@@ -206,7 +206,7 @@ template <typename Callable> void LoopForever(const char* name,  Callable func, 
  */
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("litecoin-%s", name);
+    std::string s = strprintf("octocoin-%s", name);
     RenameThread(s.c_str());
     try
     {
@@ -229,4 +229,12 @@ template <typename Callable> void TraceThread(const char* name,  Callable func)
     }
 }
 
+/**
+ * .. Octocoin: Converts HEX to LONG used only in GetBlockValue() in main.cpp
+ */
+long hex2long(const char* hexString);
+/**
+ * .. Octocoin
+ */
+ 
 #endif // BITCOIN_UTIL_H

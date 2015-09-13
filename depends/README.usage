@@ -4,9 +4,9 @@ To build for another arch/OS:
   make HOST=host-platform-triplet && make HOST=host-platform-triplet
   (For example: make HOST=i686-w64-mingw32 -j4)
 
-A prefix will be generated that's suitable for plugging into Bitcoin's
+A prefix will be generated that's suitable for plugging into Octocoin's
 configure. In the above example, a dir named i686-w64-mingw32 will be
-created. To use it for Bitcoin:
+created. To use it for Octocoin:
 
 ./configure --prefix=`pwd`/depends/i686-w64-mingw32
 

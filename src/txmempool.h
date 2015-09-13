@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2009-2014 The Octocoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@ class CAutoFile;
 
 inline double AllowFreeThreshold()
 {
-    return COIN * 576 / 250;
+    return COIN * 981 / 250; // OctoCoin: 1440 blocks found a day. Priority cutoff is 100 octocoin day / 250 bytes.
 }
 
 inline bool AllowFree(double dPriority)

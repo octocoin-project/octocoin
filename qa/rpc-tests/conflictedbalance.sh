@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright (c) 2014 The Bitcoin Core developers
+# Copyright (c) 2014 The Octocoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,7 +24,7 @@ fi
 
 set -f
 
-BITCOIND=${BITCOIND:-${1}/bitcoind}
+BITCOIND=${BITCOIND:-${1}/octocoind}
 CLI=${BITCOINCLI:-${1}/bitcoin-cli}
 
 DIR="${BASH_SOURCE%/*}"

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2009-2014 The Octocoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,12 +26,14 @@
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
 #include <boost/thread.hpp>
+#include <boost/random/mersenne_twister.hpp>
+#include <boost/random/uniform_int.hpp>
 
 using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-# error "Litecoin cannot be compiled without assertions."
+# error "Octocoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -73,7 +75,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Litecoin Signed Message:\n";
+const string strMessageMagic = "Octocoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -913,7 +915,7 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
             return 0;
     }
 
-    // Litecoin
+    // Octocoin
     // To limit dust spam, add 1000 byte penalty for each output smaller than DUST_THRESHOLD
     BOOST_FOREACH(const CTxOut& txout, tx.vout)
         if (txout.nValue < DUST_THRESHOLD)
@@ -1242,17 +1244,77 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
     return true;
 }
 
-CAmount GetBlockValue(int nHeight, const CAmount& nFees)
+
+int static generateMTRandom(unsigned int s, int range)
 {
-    CAmount nSubsidy = 50 * COIN;
-    int halvings = nHeight / Params().SubsidyHalvingInterval();
+    boost::mt19937 gen(s);
+    boost::uniform_int<> dist(1, range);
+    return dist(gen);
+}
 
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return nFees;
+int64_t GetOctoCoinSubsidy(int nHeight) {
+   int64_t qSubsidy = 80 * COIN; 
+   
+   int BlockCountA = 180655;
+   // The below is equal to Params().SubsidyHalvingInterval()
+   //int BlockCountB = Params().SubsidyHalvingInterval();
+   
+   if (nHeight <= BlockCountA)
+   {
+      if (nHeight <= 94255) {
+         qSubsidy = 188 * COIN;
+	  }
+	  else 
+	  {
+	     qSubsidy = 88 * COIN;
+	  }
+   }
+   else
+   {
+      	int halvings = ((nHeight - BlockCountA) / (Params().SubsidyHalvingInterval()));
+		
+		// Force block reward to zero when right shift is undefined.
+		if (halvings >= 64)
+		    return 0;
+		
+		// Subsidy is cut in half every 358364 blocks (1 year)
+		qSubsidy >>= halvings;
+   }
+   
+   return qSubsidy;
 
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
+}
+
+CAmount GetBlockValue(int nHeight, const CAmount& nFees, uint256 prevHash)
+{
+
+    CAmount nSubsidy = 80 * COIN;
+
+    if (nHeight <= Params().DiffChangeTarget()) {
+    	//this is pre-patch, through partial random bonus blocks.
+    	if (nHeight == 1) { nSubsidy = 711111 * COIN; }
+    	else if (nHeight <= 7855) { nSubsidy = 888 * COIN; }
+    	else {
+    		std::string cseed_str = prevHash.ToString().substr(7,7);
+    		const char* cseed = cseed_str.c_str();
+            long seed = hex2long(cseed);
+            int rand = generateMTRandom(seed, 7200);
+            
+            if (rand > 1900 && rand < 2801) 
+			{
+				nSubsidy = 888 * COIN;
+			}
+			else
+			{
+				nSubsidy = 88 * COIN;
+			}
+		}
+		
+
+	} else {
+		//patch takes effect after 75888 blocks solved
+		nSubsidy = GetOctoCoinSubsidy(nHeight);
+	}
 
     return nSubsidy + nFees;
 }
@@ -1647,7 +1709,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("litecoin-scriptch");
+    RenameThread("octocoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -1698,9 +1760,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         }
     }
 
-    // BIP16 didn't become active until Oct 1 2012
-    int64_t nBIP16SwitchTime = 1349049600;
-    bool fStrictPayToScriptHash = (pindex->GetBlockTime() >= nBIP16SwitchTime);
+    // BIP16 was always active in OctoCoin
+    bool fStrictPayToScriptHash = true;
 
     unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
 
@@ -1768,10 +1829,16 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime1 = GetTimeMicros(); nTimeConnect += nTime1 - nTimeStart;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs-1), nTimeConnect * 0.000001);
 
-    if (block.vtx[0].GetValueOut() > GetBlockValue(pindex->nHeight, nFees))
+    uint256 prevHash = 0;
+    if(pindex->pprev)
+    {
+        prevHash = pindex->pprev->GetBlockHash();
+    }
+
+    if (block.vtx[0].GetValueOut() > GetBlockValue(pindex->nHeight, nFees, prevHash))
         return state.DoS(100,
                          error("ConnectBlock() : coinbase pays too much (actual=%d vs limit=%d)",
-                               block.vtx[0].GetValueOut(), GetBlockValue(pindex->nHeight, nFees)),
+                               block.vtx[0].GetValueOut(), GetBlockValue(pindex->nHeight, nFees, prevHash)),
                                REJECT_INVALID, "bad-cb-amount");
 
     if (!control.Wait())
@@ -2546,7 +2613,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if (pcheckpoint && nHeight < pcheckpoint->nHeight)
         return state.DoS(100, error("%s : forked chain older than last checkpoint (height %d)", __func__, nHeight));
 
-    // Litecoin: Reject block.nVersion=1 blocks (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
+    // Octocoin: Reject block.nVersion=1 blocks (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
     bool enforceV2 = false;
     if (block.nVersion < 2)
     {
@@ -2558,7 +2625,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
         }
         else
         {
-            // Regtest and Unittest: use Bitcoin's supermajority rule
+            // Regtest and Unittest: use Octocoin's supermajority rule
             if (CBlockIndex::IsSuperMajority(2, pindexPrev, Params().RejectBlockOutdatedMajority()))
                 enforceV2 = true;
         }
@@ -2590,7 +2657,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
             return state.DoS(10, error("%s : contains a non-final transaction", __func__), REJECT_INVALID, "bad-txns-nonfinal");
         }
 
-    // Litecoin: (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
+    // Octocoin: (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
     // if 750 of the last 1,000 blocks are version 2 or greater (51/100 if testnet):
     bool checkHeightMismatch = false;
@@ -2604,7 +2671,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         }
         else
         {
-            // Regtest and Unittest: use Bitcoin's supermajority rule
+            // Regtest and Unittest: use Octocoin's supermajority rule
             if (CBlockIndex::IsSuperMajority(2, pindexPrev, Params().EnforceBlockUpgradeMajority()))
                 checkHeightMismatch = true;
         }
@@ -2712,6 +2779,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired)
 {
+	// OctoCoin: temporarily disable v2 block lockin until we are ready for v2 transition
+	return false;
+	
     unsigned int nToCheck = Params().ToCheckBlockUpgradeMajority();
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++)

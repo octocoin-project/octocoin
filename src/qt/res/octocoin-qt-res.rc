@@ -1,5 +1,5 @@
-IDI_ICON1 ICON DISCARDABLE "icons/bitcoin.ico"
-IDI_ICON2 ICON DISCARDABLE "icons/bitcoin_testnet.ico"
+IDI_ICON1 ICON DISCARDABLE "icons/octocoin.ico"
+IDI_ICON2 ICON DISCARDABLE "icons/octocoin_testnet.ico"
 
 #include <windows.h>             // needed for VERSIONINFO
 #include "../../clientversion.h" // holds the needed client version information
@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Litecoin"
-            VALUE "FileDescription",    "Litecoin Core (OSS GUI client for Litecoin)"
+            VALUE "CompanyName",        "Octocoin"
+            VALUE "FileDescription",    "Octocoin Core (OSS GUI client for Octocoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "litecoin-qt"
+            VALUE "InternalName",       "octocoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "litecoin-qt.exe"
-            VALUE "ProductName",        "Litecoin Core"
+            VALUE "OriginalFilename",   "octocoin-qt.exe"
+            VALUE "ProductName",        "Octocoin Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

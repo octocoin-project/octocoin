@@ -1,24 +1,24 @@
-Litecoin Core integration/staging tree
+Octocoin Core integration/staging tree
 =====================================
 
-https://litecoin.org
+https://octocoin.org
 
-What is Litecoin?
+What is Octocoin?
 ----------------
 
-Litecoin is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Litecoin uses peer-to-peer technology to operate
+Octocoin is an experimental new digital currency that enables instant payments to
+anyone, anywhere in the world. Octocoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Litecoin Core is the name of open source
+out collectively by the network. Octocoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Litecoin Core software, see https://litecoin.org
+the Octocoin Core software, see https://octocoin.org
 
 License
 -------
 
-Litecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Octocoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Development process
@@ -27,12 +27,12 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Litecoin
+If it is a simple/trivial/non-controversial change, then one of the Octocoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
 submitter will be asked to start a discussion (if they haven't already) on the
-[mailing list](https://groups.google.com/forum/#!forum/litecoin-dev).
+[mailing list](https://groups.google.com/forum/#!forum/octocoin-dev).
 
 The patch will be accepted if there is broad consensus that it is a good thing.
 Developers should expect to rework and resubmit patches if the code doesn't
@@ -40,8 +40,8 @@ match the project's coding conventions (see [doc/coding.md](doc/coding.md)) or a
 controversial.
 
 The `master-0.10` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/litecoin-project/litecoin/tags) are created
-regularly to indicate new official, stable release versions of Litecoin.
+completely stable. [Tags](https://github.com/octocoin-project/octocoin/tags) are created
+regularly to indicate new official, stable release versions of Octocoin.
 
 Testing
 -------
@@ -55,7 +55,7 @@ lots of money.
 
 Large changes should have a test plan, and should be tested by somebody other
 than the developer who wrote the code.
-Creating a thread in the [Litecoin discussion forum](https://litecointalk.org/index.php?board=2.0) will allow the Litecoin
+Creating a thread in the [Octocoin discussion forum](https://litecointalk.org/index.php?board=2.0) will allow the Octocoin
 development team members to review your proposal and to provide assistance with creating a test plan. 
 
 
@@ -65,8 +65,8 @@ Translations
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Litecoin periodically.
+We only accept translation fixes that are submitted through [Octocoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
+Translations are converted to Octocoin periodically.
 
 Development tips and tricks
 ---------------------------
@@ -98,7 +98,7 @@ that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 
-Litecoin Core is a multithreaded application, and deadlocks or other multithreading bugs
+Octocoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.

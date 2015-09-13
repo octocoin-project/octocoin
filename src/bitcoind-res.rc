@@ -16,13 +16,13 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Litecoin"
-            VALUE "FileDescription",    "Litecoind (OSS daemon/client for Litecoin)"
+            VALUE "CompanyName",        "Octocoin"
+            VALUE "FileDescription",    "Litecoind (OSS daemon/client for Octocoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "litecoind"
+            VALUE "InternalName",       "octocoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "litecoind.exe"
+            VALUE "OriginalFilename",   "octocoind.exe"
             VALUE "ProductName",        "Litecoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

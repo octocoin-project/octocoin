@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (c) 2013-2014 The Bitcoin Core developers
+# Copyright (c) 2013-2014 The Octocoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +11,6 @@ EXEEXT="@EXEEXT@"
 @BUILD_BITCOIN_UTILS_TRUE@ENABLE_UTILS=1
 @BUILD_BITCOIND_TRUE@ENABLE_BITCOIND=1
 
-REAL_BITCOIND="$BUILDDIR/src/bitcoind${EXEEXT}"
+REAL_BITCOIND="$BUILDDIR/src/octocoind${EXEEXT}"
 REAL_BITCOINCLI="$BUILDDIR/src/bitcoin-cli${EXEEXT}"
 

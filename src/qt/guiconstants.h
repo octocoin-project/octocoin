@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2011-2014 The Octocoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -44,9 +44,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Litecoin"
-#define QAPP_ORG_DOMAIN "litecoin.org"
-#define QAPP_APP_NAME_DEFAULT "Litecoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Litecoin-Qt-testnet"
+#define QAPP_ORG_NAME "Octocoin"
+#define QAPP_ORG_DOMAIN "octocoin.org"
+#define QAPP_APP_NAME_DEFAULT "Octocoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Octocoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

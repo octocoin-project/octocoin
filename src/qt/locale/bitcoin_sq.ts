@@ -183,8 +183,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Octocoin</source>
+        <translation>Octocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -219,11 +219,11 @@
         <translation>Shiriti i mjeteve</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Berthama Litecoin</translation>
+        <source>Octocoin Core</source>
+        <translation>Berthama Octocoin</translation>
     </message>
     <message>
-        <source>&amp;About Litecoin Core</source>
+        <source>&amp;About Octocoin Core</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
     <message numerus="yes">
@@ -374,15 +374,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Berthama Litecoin</translation>
+        <source>Octocoin Core</source>
+        <translation>Berthama Octocoin</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versioni</translation>
     </message>
     <message>
-        <source>About Litecoin Core</source>
+        <source>About Octocoin Core</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
     </context>
@@ -393,12 +393,12 @@
         <translation>Miresevini</translation>
     </message>
     <message>
-        <source>Welcome to Litecoin Core.</source>
-        <translation>Miresevini ne Berthamen Litecoin</translation>
+        <source>Welcome to Octocoin Core.</source>
+        <translation>Miresevini ne Berthamen Octocoin</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Berthama Litecoin</translation>
+        <source>Octocoin Core</source>
+        <translation>Berthama Octocoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -585,8 +585,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Berthama Litecoin</translation>
+        <source>Octocoin Core</source>
+        <translation>Berthama Octocoin</translation>
     </message>
     <message>
         <source>[testnet]</source>
