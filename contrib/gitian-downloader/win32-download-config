@@ -3,7 +3,7 @@ name: octocoin
 urls:
 - http://octocoin.org/octocoin-latest-win32-gitian.zip
 rss:
-- url: http://sourceforge.net/api/file/index/project-id/244765/mtime/desc/limit/100/rss
+- url: 
   xpath: //item/link/text()
   pattern: octocoin-\d+.\d+.\d+-win32-gitian.zip
 signers:

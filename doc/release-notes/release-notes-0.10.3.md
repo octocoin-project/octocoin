@@ -1,13 +1,13 @@
-Octocoin Core version 0.10.3 is now available from:
+Bitcoin Core version 0.10.3 is now available from:
 
-  <https://octocoin.org/bin/octocoin-core-0.10.3/>
+  <https://bitcoin.org/bin/bitcoin-core-0.10.3/>
 
 This is a new minor version release, bringing security fixes and translation 
 updates. It is recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/octocoin/octocoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -17,15 +17,15 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Octocoin-Qt (on Mac) or
-octocoind/octocoin-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
+bitcoind/bitcoin-qt (on Linux).
 
 Downgrade warning
 ------------------
 
 Because release 0.10.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.10 versions of Octocoin Core or other software:
+backwards-compatible with pre-0.10 versions of Bitcoin Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -162,4 +162,4 @@ And all those who contributed additional code review and/or security research:
 - timothy on IRC for reporting the issue
 - Vulnerability in miniupnp discovered by Aleksandar Nikolic of Cisco Talos
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/octocoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bitcoin/).
