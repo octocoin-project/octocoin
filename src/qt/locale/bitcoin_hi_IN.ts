@@ -165,7 +165,7 @@
     </message>
     <message>
         <source>Octocoin</source>
-        <translation>बीटकोइन</translation>
+        <translation>Octocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -189,7 +189,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Octocoin network</source>
-        <translation><numerusform>%n सक्रिया संपर्क बीटकोइन नेटवर्क से</numerusform><numerusform>%n सक्रिया संपर्क बीटकोइन नेटवर्क से</numerusform></translation>
+        <translation><numerusform>%n सक्रिया संपर्क Octocoin नेटवर्क से</numerusform><numerusform>%n सक्रिया संपर्क Octocoin नेटवर्क से</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>

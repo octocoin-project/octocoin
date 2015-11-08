@@ -2,8 +2,7 @@ Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
 Upstream-Name: Octocoin
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#octocoin@freenode.net
-Source: http://sourceforge.net/projects/octocoin/files/
- https://github.com/octocoin/octocoin
+Source: https://github.com/octocoin-project/octocoin
 
 Files: *
 Copyright: 2009-2012, Octocoin Core Developers

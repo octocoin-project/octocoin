@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.bitcoinfoundation.Octocoin-Qt";
+        return @"org.octocoin.Octocoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

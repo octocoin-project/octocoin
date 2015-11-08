@@ -1,4 +1,4 @@
-Octocoin Core 0.10.2
+Octocoin Core 0.10.3
 =====================
 
 Setup
