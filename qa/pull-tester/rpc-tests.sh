@@ -5,7 +5,7 @@ CURDIR=$(cd $(dirname "$0"); pwd)
 # Get BUILDDIR and REAL_BITCOIND
 . "${CURDIR}/tests-config.sh"
 
-export BITCOINCLI=${BUILDDIR}/qa/pull-tester/run-bitcoin-cli
+export BITCOINCLI=${BUILDDIR}/qa/pull-tester/run-octocoin-cli
 export BITCOIND=${REAL_BITCOIND}
 
 #Run the tests
