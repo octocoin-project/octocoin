@@ -1290,7 +1290,7 @@ CAmount GetBlockValue(int nHeight, const CAmount& nFees, uint256 prevHash)
 
     CAmount nSubsidy = 80 * COIN;
 
-    if (nHeight <= Params().DiffChangeTarget()) {
+    if (nHeight < Params().DiffChangeTarget()) {
     	//this is pre-patch, through partial random bonus blocks.
     	if (nHeight == 1) { nSubsidy = 711111 * COIN; }
     	else if (nHeight <= 7855) { nSubsidy = 888 * COIN; }
