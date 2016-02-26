@@ -60,13 +60,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         (188888, uint256("0x88a40e928431179514a85b880c61723f36fde6376a1f3074a02cfe37d6ee83ff"))        
         (288888, uint256("0x5bc1b49294bbb3b515dcd81c7af15aa056235ea727fa83f28ebb0bd06ebf51c2"))                             
         (388888, uint256("0xd187297445f901d9a1b2480741be24137337de4de6a6f61cc272af0532b57efb"))
+        (488888, uint256("0x46073b3bfbb98de200b5dc9c30ad44bdb28dff63360a1a4afc9c5f0eeee14860"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1443284791, // * UNIX timestamp of last checkpoint block
-        536914,   // * total number of transactions between genesis and last checkpoint
+        1453099858, // * UNIX timestamp of last checkpoint block
+        713656,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        981.81     // * estimated number of transactions per day after checkpoint
+        822.0     // * estimated number of transactions per day after checkpoint
     };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -101,10 +102,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xfb;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xdb;
+        pchMessageStart[0] = 0x0c;
+        pchMessageStart[1] = 0x8b;
+        pchMessageStart[2] = 0xc0;
+        pchMessageStart[3] = 0xb8;
         vAlertPubKey = ParseHex("04d3d78080f77509ed1049b52b823a68de9b91035356cd1cf0f91458de7162591c60bdf6c30e572300b1762a0c57957bf99f9218a3dbb1570f625dba8145aff591");
         nDefaultPort = 22889;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
@@ -147,9 +148,7 @@ public:
         assert(hashGenesisBlock == uint256("0x75418479276eaedd9e5da9a34cca8574e0b0380035b2ced3616b7a67bb5824e3"));
         assert(genesis.hashMerkleRoot == uint256("0x91c3cf5f1dabaacabac7f91ff1ba573d233a7826fc51b6d9a308166b6ca9e530"));
 
-        vSeeds.push_back(CDNSSeedData("octocoin.org", "s1.octocoin.org"));
-        vSeeds.push_back(CDNSSeedData("octocoin.org", "s2.octocoin.org"));
-        vSeeds.push_back(CDNSSeedData("securepayment.cc", "octocoin.securepayment.cc"));
+        vSeeds.push_back(CDNSSeedData("securepayment.cc", "octocoin.seeds.securepayment.cc"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(18);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
@@ -188,10 +187,10 @@ public:
     CTestNetParams() {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
+        pchMessageStart[0] = 0x0c;
+        pchMessageStart[1] = 0x7b;
+        pchMessageStart[2] = 0xc0;
+        pchMessageStart[3] = 0xb7;
         vAlertPubKey = ParseHex("0449623fc74489a947c4b15d579115591add020e53b3490bf47297dfa3762250625f8ecc2fb4fc59f69bdce8f7080f3167808276ed2c79d297054367566038aa82");
         nDefaultPort = 32889;
         nEnforceBlockUpgradeMajority = 51;
@@ -210,9 +209,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("octocoin.org", "s1.octocoin.org"));
-        vSeeds.push_back(CDNSSeedData("octocoin.org", "s2.octocoin.org"));
-        vSeeds.push_back(CDNSSeedData("securepayment.cc", "octocoin.securepayment.cc"));
+        vSeeds.push_back(CDNSSeedData("securepayment.cc", "octocoin.seeds.securepayment.cc"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(111);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(196);
@@ -249,10 +246,10 @@ public:
     CRegTestParams() {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
+        pchMessageStart[0] = 0x0c;
+        pchMessageStart[1] = 0x6b;
+        pchMessageStart[2] = 0xc0;
+        pchMessageStart[3] = 0xb6;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
