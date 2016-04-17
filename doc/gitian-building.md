@@ -353,7 +353,7 @@ Output from `gbuild` will look something like
     Creating build script (var/build-script)
     lxc-start: Connection refused - inotify event with no name (mask 32768)
     Running build script (log in var/build.log)
-
+```
 Building an alternative repository
 -----------------------------------
 
