@@ -261,7 +261,7 @@ public:
         nTargetTimespanNEW = 88; // 88 seconds
         nTargetSpacing = 88; // 88 seconds
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-		nMaxTipAge = 24 * 60 * 60;
+        nMaxTipAge = 24 * 60 * 60;
         genesis.nTime = 1394183844;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 0;

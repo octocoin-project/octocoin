@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-Octocoin Core version 0.10.3 is now available from:
-
-  <https://octocoin.org/bin/octocoin-core-0.10.3/>
-=======
 Bitcoin Core version 0.10.4 is now available from:
 
-  <https://bitcoin.org/bin/bitcoin-core-0.10.4/>
->>>>>>> upstream/master-0.10
+  <https://getoctocoin.com/>
 
 This is a new minor version release, bringing bug fixes, the BIP65
 (CLTV) consensus change, and relay policy preparation for BIP113. It is
@@ -14,7 +8,7 @@ recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/octocoin/octocoin/issues>
+  <https://github.com/octocoin-project/octocoin/issues>
 
 Upgrading and downgrading
 =========================
