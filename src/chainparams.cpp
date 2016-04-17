@@ -118,6 +118,7 @@ public:
         nTargetTimespanNEW = 88; // 88 seconds
         nTargetSpacing = 88; // 88 seconds
         nDiffChangeTarget = 75888; // Patch effective @ block 75888
+        nMaxTipAge = 72 * 60 * 60;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -200,6 +201,7 @@ public:
         nTargetTimespan = 888; // 888 seconds (~15 minutes/10 blocks)
         nTargetTimespanNEW = 88; // 88 seconds
         nTargetSpacing = 88; // 88 seconds
+        nMaxTipAge = 0x7fffffff;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1394183844;
@@ -259,6 +261,7 @@ public:
         nTargetTimespanNEW = 88; // 88 seconds
         nTargetSpacing = 88; // 88 seconds
         bnProofOfWorkLimit = ~uint256(0) >> 1;
+		nMaxTipAge = 24 * 60 * 60;
         genesis.nTime = 1394183844;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 0;
