@@ -5,8 +5,9 @@ Normally the Octocoin client will download the transaction and network informati
 ### Requirements
 
 - A fresh install of the Octocoin client software.
+- Ability to download Torrents or download from a direct-link.
 
-### Download the blockchain via BitTorrent
+### Download the Blockchain via BitTorrent
 
 Jeff Garzik, Octocoin Core developer, offers an [torrent file](https://bitcointalk.org/index.php?topic=145386.0) for bootstrapping purposes that is updated often. BitTorrent is a protocol that speeds up the downloading of large files by using the other clients in the network. Examples of free and safe open source clients are [Deluge](http://deluge-torrent.org/) or [qBittorrent](http://www.qbittorrent.org/). A guide to installing and configuring the torrent clients can be found [here](http://dev.deluge-torrent.org/wiki/UserGuide) for Deluge and [here](http://qbforums.shiki.hu/) for qBittorrent. A further in-depth tutorial on BitTorrent can be found [here](http://www.howtogeek.com/howto/31846/bittorrent-for-beginners-how-get-started-downloading-torrents/).
 
@@ -24,7 +25,19 @@ The torrent client installed will recognize the download of the torrent file. Sa
 
 ![Fig2](img/bootstrap2.png)
 
-### Importing the blockchain
+### Download the Blockchain from SecurePayment CC
+
+SecurePayment CC provides regulaly updated direct-link downloads. Copies of bootstrap.dat can be downloaded directly from servers provided by SecurePayment CC. All copies of boootstrap are updated at the maximum of every six months.
+
+**Copies of Bootstrap from a specific server**
+
+* [http://cdn.securepayment.cc/blockchains/octocoin/bootstrap.dat.xz](http://cdn.securepayment.cc/blockchains/octocoin/bootstrap.dat.xz)
+
+**Example usage in a (bash) Terminal**
+
+	wget http://cdn.securepayment.cc/blockchains/octocoin/bootstrap.dat.xz       //downloads bootstrap into current directory
+
+### Importing the Blockchain
 Exit the Octocoin client software if you have it running. Be sure not to have an actively used wallet in use. We are going to copy the download of the blockchain to the Octocoin client data directory. You should run the client software at least once so it can generate the data directory. Copy the downloaded bootstrap.dat file into the Octocoin data folder.
 
 **For Windows users:**
@@ -45,7 +58,7 @@ The directory is hidden in your User folder. Go to:
 
 	~/.octocoin/
     
-### Importing the blockchain
+### Importing the Blockchain
 Now start the Octocoin client software. It should show "Importing blocks from disk" like the image below. 
 ![Fig5](img/bootstrap5.png)
 

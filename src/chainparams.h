@@ -73,6 +73,8 @@ public:
     int64_t Interval() const { return nTargetTimespan / nTargetSpacing; }
     /* Diff Change Target Patch effective @ block number */
     int64_t DiffChangeTarget() const { return nDiffChangeTarget; }
+    /* This is not used here but left in place for easy merging of code */
+    int64_t MaxTipAge() const { return nMaxTipAge; }
     /** Make miner stop after a block is found. In RPC, don't return until nGenProcLimit blocks are generated */
     bool MineBlocksOnDemand() const { return fMineBlocksOnDemand; }
     /** In the future use NetworkIDString() for RPC fields */
@@ -104,6 +106,7 @@ protected:
     int64_t nTargetSpacing;
     int64_t nDiffChangeTarget;
     int nMinerThreads;
+    long nMaxTipAge;
     std::vector<CDNSSeedData> vSeeds;
     std::vector<unsigned char> base58Prefixes[MAX_BASE58_TYPES];
     CBaseChainParams::Network networkID;

@@ -1,4 +1,4 @@
-Octocoin Core 0.10.2
+Octocoin Core 0.10.4
 =====================
 
 Intro
@@ -18,6 +18,6 @@ However, it downloads and stores the entire history of Octocoin transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the octocoin wiki at:
-  https://en.octocoin.it/wiki/Main_Page
+See the octocoin website at:
+  http://octocoinfoundation.org/
 for more help and information.

@@ -1,7 +1,7 @@
 Octocoin Core integration/staging tree
 =====================================
 
-https://octocoin.org
+https://octocoinfoundation.org
 
 What is Octocoin?
 ----------------
@@ -13,7 +13,7 @@ out collectively by the network. Octocoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Octocoin Core software, see https://octocoin.org
+the Octocoin Core software, see https://octocoinfoundation.org
 
 License
 -------
@@ -55,7 +55,7 @@ lots of money.
 
 Large changes should have a test plan, and should be tested by somebody other
 than the developer who wrote the code.
-Creating a thread in the [Octocoin discussion forum](https://litecointalk.org/index.php?board=2.0) will allow the Octocoin
+Creating a thread in the [Octocoin discussion forum](https://octocointalk.org/index.php?board=2.0) will allow the Octocoin
 development team members to review your proposal and to provide assistance with creating a test plan. 
 
 
@@ -65,7 +65,7 @@ Translations
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-We only accept translation fixes that are submitted through [Octocoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
+We only accept translation fixes that are submitted through [Octocoin Core's Transifex page](https://www.transifex.com/projects/p/octocoin/).
 Translations are converted to Octocoin periodically.
 
 Development tips and tricks
